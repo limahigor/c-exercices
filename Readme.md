@@ -1,1 +1,1 @@
-Exercicios e projetos feitos durante o aprendizado da Linguagem C
+Exercicios e projetos feitos durante o aprendizado da Linguagem C.
