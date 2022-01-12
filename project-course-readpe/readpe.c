@@ -27,9 +27,8 @@ int main(int argc, char *argv[]){
 	if(fread(buffer, 32, 1, fh) != 1)
 		fatal("nao consegui ler os 32 bytes arquivo");
 
-	if(buffer[0] != 'M' || buffer[1] != 'Z' || buffer[2] != 'P'){
+	if(buffer[0] != 'M' || buffer[1] != 'Z' || buffer[2] != 'P')
 		fatal("o arquivo nao parece ser um executavel");
-	}
 
 	return 0;
 }
