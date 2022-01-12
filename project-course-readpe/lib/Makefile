@@ -1,5 +1,7 @@
 all:
-	gcc -shared -fPIC -o libpetest.so petest.c
-
+	gcc -o libpetest.o petest.c -c
+	ar -r libpetest.a libpetest.o
+	rm -f libpetest.o
+	
 clean:
-	rm -f libpetest.so
+	rm -f libpetest.o
