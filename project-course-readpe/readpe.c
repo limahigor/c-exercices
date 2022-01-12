@@ -32,8 +32,8 @@ int main(int argc, char *argv[]){
 	if(fread(buffer, 32, 1, fh) != 1)
 		fatal("nao consegui ler os 32 bytes arquivo");
 	fclose(fh);
-
-	if(!ispe(buffer))
+	// printf("%d\n", ispe(buffer));
+	if(ispe(buffer))
 		fatal("o arquivo nao parece ser um executavel");
 
 	return 0;
