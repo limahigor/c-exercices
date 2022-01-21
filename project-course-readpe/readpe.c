@@ -12,6 +12,10 @@ void usage(){
 	exit(1);
 }
 
+void print_cabecalho(){
+	
+}
+
 int main(int argc, char *argv[]){
 	FILE *fh;
 	unsigned char buffer[32];
@@ -20,17 +24,20 @@ int main(int argc, char *argv[]){
 		usage();
 	}
 
-	fh = fopen(argv[1], "rb");
+	PEFILE pe;
 
-	if (fh == NULL)
-		fatal("Arquivo nao encontrado ou sem permissao de leitura");
+	pe.filepath = argv[1];
 
-	if(fread(buffer, 32, 1, fh) != 1)
-		fatal("nao consegui ler os 32 bytes arquivo");
-	fclose(fh);
-	// printf("%d\n", ispe(buffer));
-	if(petest_ispe(buffer))
-		fatal("o arquivo nao parece ser um executavel");
+	petest_init(&pe);
+
+	if(petest_ispe(&pe))
+		printf("O arquivo eh um PE, continuando...\n\n");
+	else
+		fatal("O arquivo nao eh um PE");
+
+	printf("File: %s\n", pe.filepath);
+	printf("MZ Header: %x\n", pe.hdr_dos->e_magic);
+	printf("COFF Header offset: %x\n", pe.hdr_dos->e_lfanew);
 
 	return 0;
 }
