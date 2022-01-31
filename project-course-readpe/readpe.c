@@ -13,7 +13,7 @@ void usage(){
 }
 
 void print_cabecalho(){
-	
+
 }
 
 int main(int argc, char *argv[]){
@@ -38,6 +38,8 @@ int main(int argc, char *argv[]){
 	printf("File: %s\n", pe.filepath);
 	printf("MZ Header: %x\n", pe.hdr_dos->e_magic);
 	printf("COFF Header offset: %x\n", pe.hdr_dos->e_lfanew);
+
+	petest_deinit(&pe);
 
 	return 0;
 }

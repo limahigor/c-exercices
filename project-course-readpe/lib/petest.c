@@ -19,3 +19,8 @@ bool petest_init(PEFILE *pe){
 	fclose(f);
 	return true;
 }
+
+void petest_deinit(PEFILE *pe){
+	if(pe->hdr_dos)
+		free(pe->hdr_dos);
+}
