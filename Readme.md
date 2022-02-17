@@ -9,7 +9,9 @@ _Criado com o objetivo de aprender a desenvolver pra linha de comando de forma e
 ## readpe
 Parser de PE básico\
 _Projeto pratico criado durante o estudo de C pelo canal "Papo Binário"_
-
 ## estoque _(em desenvolvimento)_
 Controle de estoque\
 _Projeto criado para o aprendizado da criação eficiente de estrutura de dados compostas"_
+## datalogger _(em desenvolvimento)_
+Logger de temperatura do CPU com GTK3\
+_Projeto criado para o aprendizado da criação de interfaces gráficas usando GTK3"_
