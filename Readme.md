@@ -1,6 +1,6 @@
 # C Exercices
 Exercicios e projetos feitos durante o aprendizado de C.
-## [cpftools](https://github.com/limahigor/c-exercices/tree/main/cpftools-c) _(em desenvolvimento)_
+## cpftoolsh _(em desenvolvimento)_
 Um simples projeto pra gerar e validar CPF's e CNPJ's em lote por linha de comando.\
 _Criado com o objetivo de aprender a desenvolver pra linha de comando de forma eficiente e que se integre com outros programas da platafomra UNIX_
 ## ren _(em desenvolvimento)_
