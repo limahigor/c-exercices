@@ -13,5 +13,13 @@ _Projeto pratico criado durante o estudo de C pelo canal "Papo Binário"_
 Controle de estoque\
 _Projeto criado para o aprendizado da criação eficiente de estrutura de dados compostas"_
 ## datalogger _(em desenvolvimento)_
-Logger de temperatura do CPU com GTK3\
+Logger de sinal ADC hipotético com GTK3\
+Através de uma equação, o programa gera, a cada segundo, um sinal ADC, que é mostrado na tela pro usuário.\
+A cada minuto, é gerado um arquivo binário com os registros de cada medição.\
+A cada X minutos é gerado um arquivo binário com o resumo de todas as medições anteriores. Com média, mínima, máxima e RMS.\
+
+Implementações futuras: 
+- Melhoria de interface
+- Opção de conversão de binário pra CSV
+
 _Projeto criado para o aprendizado da criação de interfaces gráficas usando GTK3"_
