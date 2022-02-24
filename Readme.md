@@ -10,8 +10,9 @@ _Criado com o objetivo de aprender a desenvolver pra linha de comando de forma e
 Parser de PE básico\
 _Projeto pratico criado durante o estudo de C pelo canal "Papo Binário"_
 ## estoque _(em desenvolvimento)_
-Controle de estoque\
-_Projeto criado para o aprendizado da criação eficiente de estrutura de dados compostas"_
+Controle de estoque
+
+_Projeto criado para o aprendizado da criação eficiente de estrutura de dados compostas_
 ## datalogger _(em desenvolvimento)_
 Logger de sinal ADC hipotético com GTK3.
 
