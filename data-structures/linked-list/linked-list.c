@@ -60,7 +60,7 @@ void list_create(struct lists_s **list){
 	aux->head->next = aux->tail;
     	aux->tail->next = aux->tail;
 
-    *list = aux;
+    	*list = aux;
 }
 
 int main(){
