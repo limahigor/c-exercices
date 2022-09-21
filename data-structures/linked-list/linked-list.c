@@ -58,9 +58,9 @@ void list_create(struct lists_s **list){
 	aux->head = (struct node_s *)malloc(sizeof(struct node_s));
 	aux->tail = (struct node_s *)malloc(sizeof(struct node_s));
 	aux->head->next = aux->tail;
-    	aux->tail->next = aux->tail;
+    aux->tail->next = aux->tail;
 
-    	*list = aux;
+    *list = aux;
 }
 
 int main(){
